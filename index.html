@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap-grid.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <audio id="alarm">
+        <source src="
+  http://res.cloudinary.com/duytlootx/video/upload/v1514413131/Fire_pager-jason-1283464858_g7meq1.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+    <p id="alertBox"></p>
+    <h1 class="title">
+        Pomodoro Timer
+    </h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 lists" ondrop="onDrop(event)" ondragover="allowDrop(event)">
+                Current Task
+                <hr>
+                <ul class="taskList" id="currList">
+                    <li>
+                        <span class='modify' id='removeCurr'>-</span>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="col-2 lists">
+                Task List
+                <hr>
+                <ul class="taskList">
+                    <li>
+                        <span class='modify' id="addTask">+</span>
+                        <span class='modify' id='removeTask'> -</span>
+                    </li>
+                </ul>
+                <form id="taskForm">
+                    <input type='text' id="inputField" maxlength="23">
+                    <input class='button-style cursor ' type='submit' value="add">
+                    <form>
+            </div>
+            <div class="col-6 lists">
+                Timer
+                <hr>
+
+                <div class="row space">
+                    <div class="col">
+                        <h3 class="timer-sm">
+                            <span class="control-group" id="interval-minus">- </span>
+                            <span id="interval">0:00</span>
+                            <span class="control-group" id="interval-plus"> +</span>
+                        </h3>
+                        <p>Task Interval</p>
+                    </div>
+                    <div class="col">
+                        <button class='button-style pad cursor' id='reset'>Reset</button>
+                        <h1 class="timer cursor" id='main'>
+                            <span id='setTime'>0:00</span>
+                        </h1>
+                        <p>Currently Running:
+                            <span id="currentTask"></span>
+                        </p>
+                    </div>
+                    <div class="col">
+                        <h3 class="timer-sm">
+                            <span class="control-group" id="break-minus">- </span>
+                            <span id="breakTime">0:00</span>
+                            <span class="control-group" id="break-plus"> +</span>
+                        </h3>
+                        <p>Break Interval</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>How To Use This Timer</h3>
+            <p class="textPad">
+                There are 3 timers you can use to start/stop, set the interval, and set the break time. Create a list of tasks in the Task
+                List column and drag them into the Current Task column to add them to your timer. Your Pomodoro Timer will
+                automatically check the tasks off at the end of each interval and tell you to go to break. If a task is running
+                you will need to stop the timer to make changes.
+            </p>
+            <p>
+                According to Wikipedia there are six steps to the Pomodoro Technique:
+            </p>
+            <ol>
+                <li>Decide on the tasks to be done.</li>
+                <li>Set the pomodoro timer (traditionally to 25 minutes).</li>
+                <li>Work on the task.</li>
+                <li>End work when the timer rings and check off task.</li>
+                <li>If you have fewer than four checkmarks, take a short break (3–5 minutes), then go to step 2.</li>
+                <li>After four pomodoros, take a longer break (15–30 minutes), reset your checkmark count to zero, then go to
+                    step 1.</li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</html>

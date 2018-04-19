@@ -1,0 +1,148 @@
+body {
+    min-width:1080px;
+    margin: auto;
+    padding-top: 5%;
+    background-color: gainsboro;
+    color: black;
+    /*border: 2px solid limegreen;*/
+  }
+  .lists
+  {
+    background-color: antiquewhite;
+    font-size: 18px;
+    text-align: center;
+    border: 1.5px solid black;
+    height: 400px;
+    padding: 0px;
+    margin: 0px;
+  }
+  hr
+  {
+    text-align: top;
+   padding: 0px;
+   margin:0px;
+   height: 2px;
+    color: black;
+    background-color: black;
+    border: none;
+  }
+  .space
+  {
+  padding-top:5%;
+  }
+  
+  .timer
+  {  padding-top:50px;
+    vertical-align: middle; 
+    text-align: center;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    color: antiquewhite;
+    background-color: rgb(50, 205, 50);
+    border: none;
+    border-radius: 100%;
+    -webkit-user-select: none;  
+    -moz-user-select: none;  
+    -ms-user-select: none;     
+    user-select: none;
+    
+  }
+  .timer-sm
+  {
+    margin-left: 35%;
+    padding-top:35px;
+    width:100px;
+    height:100px;
+    color: antiquewhite;
+    background-color:firebrick;
+    border: 0px;
+    border-radius: 100%;
+    -webkit-user-select: none;  
+    -moz-user-select: none;  
+    -ms-user-select: none;     
+    user-select: none;
+  }
+  
+  .cursor
+  {
+    cursor: pointer; 
+  }
+  
+  .control-group
+  {
+    cursor: pointer;
+    color:black;
+    
+  }
+  .entry
+  {
+    font-family: arial;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 10px;
+    border-bottom: 1px solid;
+    
+  }
+  .title
+  {
+    font-family: "Comic Sans MS", cursive, sans-serif​;
+    text-align: center;
+  }
+  
+  .button-style
+  {
+    border-radius:5px;
+    font-size: 15px;
+    border: 1px solid;
+    font-family: "Comic Sans MS", cursive, sans-serif​;
+    background-color: antiquewhite;
+  }
+  .textPad
+  {
+   padding-right: 25%;
+  }
+  .taskList
+  {
+    padding: 0;
+    list-style-type:none;
+    margin: 0;
+  }
+  .modify
+  {
+     font-family: arial;
+    font-size: 30px;
+    width:25px;
+    cursor: pointer;
+    -webkit-user-select: none;  
+    -moz-user-select: none;  
+    -ms-user-select: none;     
+    user-select: none;         
+  }
+  .modify:hover
+  {
+    text-shadow: .5px .5px 1px;
+  }
+  .cursor:active
+  {
+    
+    box-shadow: .5px .5px .5px;
+  }
+  form
+  {
+    margin:none;
+  }
+  #inputField
+  {
+    font-size: 20px;
+    background-color: antiquewhite;
+    width: 250px;
+    padding:none;
+    border:none;
+    border-bottom:1px solid;
+  }
+  
+  .complete
+  {
+   text-decoration:line-through; 
+  }
